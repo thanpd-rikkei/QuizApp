@@ -27,7 +27,15 @@ class Result extends StatelessWidget {
                     child: Text.rich(TextSpan(
                         text:
                             "Chỉ số phù hợp giữa bạn và khóa học flutter là: ",
-                        children: [TextSpan(text: "$percentPoint%")])),
+                        children: [
+                          TextSpan(
+                            text: "$percentPoint%",
+                            style: TextStyle(
+                              color: Theme.of(context).primaryColor,
+                              fontWeight: FontWeight.bold
+                            )
+                          )
+                        ])),
                   ),
                 )),
             const Padding(padding: EdgeInsets.only(top: 10)),
